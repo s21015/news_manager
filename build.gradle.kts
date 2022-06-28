@@ -27,9 +27,12 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
 
-    implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2")
+    implementation("org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.4.0")
     implementation("org.mariadb.jdbc:mariadb-java-client:3.0.5")
     mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.1")
+
+//  教科書186P
+    implementation("org.springframework.boot:spring-boot-starter-security")
 }
 
 mybatisGenerator {
