@@ -44,7 +44,7 @@ interface NewsWithCategoryMapper {
     fun selectOne(selectStatement: SelectStatementProvider): NewsWithCategory?
 }
 
-private val columnList = listOf(id, title, categoryId, publishAt, createAt, userId, body, name)
+private val columnList = listOf(id, title, categoryId, publishAt, createAt, userId, body)
 
 fun NewsWithCategoryMapper.select(completer: SelectCompleter): List<NewsWithCategory> =
     select(columnList) {
@@ -54,16 +54,6 @@ fun NewsWithCategoryMapper.select(completer: SelectCompleter): List<NewsWithCate
         }
         completer()
     }.run(this::selectMany)
-
-// List<NewsWithCategory>をSelectStatementProviderに変更した
-//　　　　　　↓ エラーなる
-//fun NewsWithCategoryMapper.select(completer: SelectCompleter): List<NewsWithCategory> =
-//    select(columnList) {
-//        from(news, "b")
-//        leftJoin(category) {
-//            on(news.id) equalTo category.id
-//        }
-//    }
 
         fun NewsWithCategoryMapper.selectByPrimaryKey(id_: Long, completer: SelectCompleter): NewsWithCategory? =
             select(columnList) {

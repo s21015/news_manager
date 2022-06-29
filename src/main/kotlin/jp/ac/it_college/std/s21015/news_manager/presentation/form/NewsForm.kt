@@ -1,21 +1,59 @@
 package jp.ac.it_college.std.s21015.news_manager.presentation.form
 
+import jp.ac.it_college.std.s21015.news_manager.domain.model.Category
 import jp.ac.it_college.std.s21015.news_manager.domain.model.NewsWithCategory
+import java.time.LocalDateTime
 import java.util.*
 
 data class GetNewsListResponse(val newsList: List<NewsInfo>)
 
 data class NewsInfo(
-    val id: Long,
-    val title: String,
-    val categoryId: Long,
-    val publishAt: Date,
-    val createAt: Date,
-    val userId: Long,
-    val body: String,
-    val name: String
+    val id: Long?,
+    val title: String?,
+    val categoryId: Long?,
+    val publishAt: LocalDateTime?,
+    val createAt: LocalDateTime?,
+    val userId: Long?,
+    val body: String?,
     ){
     constructor(model: NewsWithCategory) : this(
-        model.news.id, model.news.title, model.news.categoryId, model.news.publishAt, model.news.createAt, model.news.userId, model.news.body, model.news.name
+        model.id, model.title, model.categoryId, model.publishAt, model.createAt, model.userId, model.body
     )
 }
+
+data class GetNewsDetailResponse(
+    val id: Long?,
+    val title: String?,
+    val categoryId: Long?,
+    val publishAt: LocalDateTime?,
+    val createAt: LocalDateTime?,
+    val userId: Long?,
+    val body: String?,
+) {
+    constructor(model: NewsWithCategory) : this(
+        model.id,
+        model.title,
+        model.categoryId,
+        model.publishAt,
+        model.createAt,
+        model.userId,
+        model.body,
+    )
+}
+
+data class CategoryInfo(
+    val id: Long,
+    val name: String,
+) {
+    constructor(category: Category) : this(
+        category.id,
+        category.name
+    )
+}
+
+data class RegisterNewsRequest(
+    val title: String,
+    val categoryId: Long,
+    val publishAt: LocalDateTime,
+    val body: String,
+)

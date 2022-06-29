@@ -7,9 +7,8 @@ data class News(
     val id: Long,
     val title: String,
     val categoryId: Long,
-    val publishAt: Date,
-    val createAt: Date,
+    val publishAt: LocalDateTime,
+    val createAt: LocalDateTime,
     val userId: Long,
     val body: String,
-    val name: String
     )
