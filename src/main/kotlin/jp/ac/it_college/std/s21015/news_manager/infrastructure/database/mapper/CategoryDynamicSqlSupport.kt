@@ -1,7 +1,7 @@
 /*
  * Auto-generated file. Created by MyBatis Generator
  */
-package jp.ac.it_college.std.s21015.news_manager.database.mapper
+package jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper
 
 import java.sql.JDBCType
 import org.mybatis.dynamic.sql.AliasableSqlTable
@@ -14,7 +14,7 @@ object CategoryDynamicSqlSupport {
 
     val name = category.name
 
-    class Category : AliasableSqlTable<Category>("category", ::Category) {
+    class Category : AliasableSqlTable<Category>("category", CategoryDynamicSqlSupport::Category) {
         val id = column<Long>(name = "id", jdbcType = JDBCType.BIGINT)
 
         val name = column<String>(name = "name", jdbcType = JDBCType.VARCHAR)

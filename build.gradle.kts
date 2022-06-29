@@ -33,6 +33,9 @@ dependencies {
 
 //  教科書186P
     implementation("org.springframework.boot:spring-boot-starter-security")
+
+    implementation("org.springframework.session:spring-session-data-redis")
+    implementation("redis.clients:jedis")
 }
 
 mybatisGenerator {

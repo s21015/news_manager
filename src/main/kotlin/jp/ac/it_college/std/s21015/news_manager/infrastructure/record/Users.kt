@@ -1,7 +1,7 @@
 /*
  * Auto-generated file. Created by MyBatis Generator
  */
-package jp.ac.it_college.std.s21015.news_manager.database.record
+package jp.ac.it_college.std.s21015.news_manager.infrastructure.record
 
 import jp.ac.it_college.std.s21015.news_manager.domain.enum.RoleType
 

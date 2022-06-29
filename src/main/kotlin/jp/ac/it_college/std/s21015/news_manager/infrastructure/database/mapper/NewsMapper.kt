@@ -1,17 +1,17 @@
 /*
  * Auto-generated file. Created by MyBatis Generator
  */
-package jp.ac.it_college.std.s21015.news_manager.database.mapper
+package jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper
 
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.body
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.categoryId
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.createAt
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.id
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.news
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.publishAt
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.title
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.NewsDynamicSqlSupport.userId
-import jp.ac.it_college.std.s21015.news_manager.database.record.News
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.body
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.categoryId
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.createAt
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.id
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.news
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.publishAt
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.title
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.NewsDynamicSqlSupport.userId
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.record.News
 import org.apache.ibatis.annotations.Mapper
 import org.apache.ibatis.annotations.Result
 import org.apache.ibatis.annotations.ResultMap

@@ -1,7 +1,7 @@
 /*
  * Auto-generated file. Created by MyBatis Generator
  */
-package jp.ac.it_college.std.s21015.news_manager.database.mapper
+package jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper
 
 import java.sql.JDBCType
 import jp.ac.it_college.std.s21015.news_manager.domain.enum.RoleType
@@ -21,7 +21,7 @@ object UsersDynamicSqlSupport {
 
     val roleType = users.roleType
 
-    class Users : AliasableSqlTable<Users>("users", ::Users) {
+    class Users : AliasableSqlTable<Users>("users", UsersDynamicSqlSupport::Users) {
         val id = column<Long>(name = "id", jdbcType = JDBCType.BIGINT)
 
         val username = column<String>(name = "username", jdbcType = JDBCType.VARCHAR)

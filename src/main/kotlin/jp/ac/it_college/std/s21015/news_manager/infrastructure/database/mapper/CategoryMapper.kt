@@ -1,12 +1,12 @@
 /*
  * Auto-generated file. Created by MyBatis Generator
  */
-package jp.ac.it_college.std.s21015.news_manager.database.mapper
+package jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper
 
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.CategoryDynamicSqlSupport.category
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.CategoryDynamicSqlSupport.id
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.CategoryDynamicSqlSupport.name
-import jp.ac.it_college.std.s21015.news_manager.database.record.Category
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.CategoryDynamicSqlSupport.category
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.CategoryDynamicSqlSupport.id
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.CategoryDynamicSqlSupport.name
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.record.Category
 import org.apache.ibatis.annotations.Mapper
 import org.apache.ibatis.annotations.Result
 import org.apache.ibatis.annotations.ResultMap

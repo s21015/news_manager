@@ -1,10 +1,10 @@
 package jp.ac.it_college.std.s21015.news_manager.infrastructure.repository
 
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.UsersDynamicSqlSupport.users
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.UsersMapper
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.selectByPrimaryKey
-import jp.ac.it_college.std.s21015.news_manager.database.mapper.selectOne
-import jp.ac.it_college.std.s21015.news_manager.database.record.Users
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.UsersDynamicSqlSupport.users
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.UsersMapper
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.selectByPrimaryKey
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.selectOne
+import jp.ac.it_college.std.s21015.news_manager.infrastructure.record.Users
 import jp.ac.it_college.std.s21015.news_manager.domain.model.User
 import jp.ac.it_college.std.s21015.news_manager.domain.repository.UserRepository
 import org.springframework.stereotype.Repository

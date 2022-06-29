@@ -10,6 +10,7 @@ import jp.ac.it_college.std.s21015.news_manager.presentation.handler.NewsWithCat
 import org.springframework.context.annotation.Bean
 import org.springframework.core.annotation.Order
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
@@ -18,6 +19,7 @@ import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 
+@EnableWebSecurity
 class SecurityConfig(private val authenticationService: AuthenticationService) {
 
     @Bean
@@ -31,8 +33,8 @@ class SecurityConfig(private val authenticationService: AuthenticationService) {
         }.formLogin {
             it
                 .loginProcessingUrl("/login")
-                .usernameParameter("username")
-                .passwordParameter("password")
+                .usernameParameter("user")
+                .passwordParameter("pass")
                 .successHandler(NewsWithCategoryAuthenticationSuccessHandler())
                 .failureHandler(NewsWithCategoryAuthenticationFailureHandler())
         }.csrf {

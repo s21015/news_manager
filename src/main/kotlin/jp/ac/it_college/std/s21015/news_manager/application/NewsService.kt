@@ -1,0 +1,14 @@
+package jp.ac.it_college.std.s21015.news_manager.application
+
+import jp.ac.it_college.std.s21015.news_manager.domain.model.NewsWithCategory
+import jp.ac.it_college.std.s21015.news_manager.domain.repository.NewsRepository
+import org.springframework.stereotype.Service
+
+@Service
+class NewsService (
+    private val newsRepository: NewsRepository
+    ) {
+    fun getList(): List<NewsWithCategory> {
+        return newsRepository.findAllWihCategory()
+    }
+}
