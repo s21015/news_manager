@@ -6,6 +6,7 @@ import jp.ac.it_college.std.s21015.news_manager.infrastructure.record.NewsWithCa
 import jp.ac.it_college.std.s21015.news_manager.domain.repository.NewsRepository
 import jp.ac.it_college.std.s21015.news_manager.infrastructure.database.mapper.*
 import org.springframework.stereotype.Repository
+import java.time.LocalDateTime
 import jp.ac.it_college.std.s21015.news_manager.domain.model.NewsWithCategory as ModelNewsWithCategory
 import jp.ac.it_college.std.s21015.news_manager.infrastructure.record.News as RecordNews
 

@@ -57,3 +57,12 @@ data class RegisterNewsRequest(
     val publishAt: LocalDateTime,
     val body: String,
 )
+
+data class RegisterCategoryRequest(
+    val name: String
+)
+
+data class UpdateCategoryRequest(
+    val id: Long,
+    val name: String
+)
